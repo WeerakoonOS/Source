@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stars</title>
+</head>
+<body>
+	<button onclick="printStars()">Print</button>
+	<p id='Res'/>
+
+	<script type="text/javascript">
+		function printStars(){
+			var txt = "";
+			for (var i = 0; i <= 10; i++){
+				for (var j=0; j<=i; j++){
+					txt += "*";
+				}
+				txt += "<br>";
+			}
+			document.getElementById('Res').innerHTML = txt;
+		}
+	</script>
+</body>
+</html>

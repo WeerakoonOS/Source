@@ -1,0 +1,25 @@
+<!DOCTYPE html>	
+<html>
+    <head>
+        <title>My first Java Script</title>
+        <script type="text/javascript">
+        	function deletePara(){
+        		var a = confirm("Do you want to delete?");
+        		if (a == true){
+        			document.getElementById("MyPara").innerHTML="Successfully deleted!";
+        			alert("Deleted");	
+        		} else {
+        			document.getElementById("MyPara").innerHTML="Not deleted!";
+        			alert("Cancelled");
+        		}
+        	}
+        </script>
+    </head>
+
+    <body>
+    	<button type="button" onclick="deletePara();">Click me to delete </button>
+        <p id="MyPara">
+       		Hello Sumedhe!
+       	</p>
+    </body>
+</html>
