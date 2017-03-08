@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Calc</title>
+	<script type="text/javascript">
+		var a, b;
+		function calc(){
+			var num1 = parseInt(prompt("Insert num1"));
+			var num2 = parseInt(prompt("Insert num2"));
+			var op = prompt("Insert operator");
+			switch (op){
+				case '+': document.getElementById("Ans").innerHTML = (num1 + num2); break;
+				case '-': document.getElementById("Ans").innerHTML = (num1 - num2); break;
+				case '*': document.getElementById("Ans").innerHTML = (num1 * num2); break;
+				case '/': document.getElementById("Ans").innerHTML = (num1 / num2); break;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<button onclick="calc();"> Calc now</button>
+	<p id="Ans"/>
+</body>
+</html>
